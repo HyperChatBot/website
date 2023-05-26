@@ -1,8 +1,9 @@
-import Image from "next/image";
+import { useTheme } from "next-themes";
 import React from "react";
 import Container from "./container";
 
 const Benefits = (props) => {
+  const { theme } = useTheme();
   const { data } = props;
   return (
     <>
@@ -10,16 +11,15 @@ const Benefits = (props) => {
         <div
           className={`flex items-center justify-center w-full lg:w-1/2 ${
             props.imgPos === "right" ? "lg:order-1" : ""
-          }`}>
+          }`}
+        >
           <div>
-            <Image
-              src={data.image}
+            <img
+              src={theme === "light" ? data.lightImage : data.darkImage}
               width="521"
               height="auto"
               alt="Benefits"
               className={"object-cover"}
-              placeholder="blur"
-              blurDataURL={data.image.src}
             />
           </div>
         </div>
@@ -27,7 +27,8 @@ const Benefits = (props) => {
         <div
           className={`flex flex-wrap items-center w-full lg:w-1/2 ${
             data.imgPos === "right" ? "lg:justify-end" : ""
-          }`}>
+          }`}
+        >
           <div>
             <div className="flex flex-col w-full mt-4">
               <h3 className="max-w-2xl mt-3 text-3xl font-bold leading-snug tracking-tight text-gray-800 lg:leading-tight lg:text-4xl dark:text-white">

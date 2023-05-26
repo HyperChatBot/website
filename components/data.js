@@ -1,60 +1,41 @@
-import {
-  FaceSmileIcon,
-  ChartBarSquareIcon,
-  CursorArrowRaysIcon,
-  DevicePhoneMobileIcon,
-  AdjustmentsHorizontalIcon,
-  SunIcon,
-} from "@heroicons/react/24/solid";
-
-import benefitOneImg from "../public/img/benefit-one.png";
-import benefitTwoImg from "../public/img/benefit-two.png";
-
 const benefitOne = {
-  title: "Highlight your benefits",
-  desc: "You can use this space to highlight your first benefit or a feature of your product. It can also contain an image or Illustration like in the example along with some bullet points.",
-  image: benefitOneImg,
-  bullets: [
-    {
-      title: "Understand your customers",
-      desc: "Then explain the first point breifly in one or two lines.",
-      icon: <FaceSmileIcon />,
-    },
-    {
-      title: "Improve acquisition",
-      desc: "Here you can add the next benefit point.",
-      icon: <ChartBarSquareIcon />,
-    },
-    {
-      title: "Drive customer retention",
-      desc: "This will be your last bullet point in this section.",
-      icon: <CursorArrowRaysIcon />,
-    },
-  ],
+  title: "Chat",
+  desc: "Chat models take a series of messages as input, and return a model-generated message as output.",
+  lightImage: "https://edge.yancey.app/beg/qk79imya-1685073643946.png",
+  darkImage: "https://edge.yancey.app/beg/usgq0hjm-1685018446761.png",
+  bullets: [],
 };
 
 const benefitTwo = {
-  title: "Offer more benefits here",
-  desc: "You can use this same layout with a flip image to highlight your rest of the benefits of your product. It can also contain an image or Illustration as above section along with some bullet points.",
-  image: benefitTwoImg,
-  bullets: [
-    {
-      title: "Mobile Responsive Template",
-      desc: "Nextly is designed as a mobile first responsive template.",
-      icon: <DevicePhoneMobileIcon />,
-    },
-    {
-      title: "Powered by Next.js & TailwindCSS",
-      desc: "This template is powered by latest technologies and tools.",
-      icon: <AdjustmentsHorizontalIcon />,
-    },
-    {
-      title: "Dark & Light Mode",
-      desc: "Nextly comes with a zero-config light & dark mode. ",
-      icon: <SunIcon />,
-    },
-  ],
+  title: "Text Completion",
+  desc: "The completions endpoint can be used for a wide variety of tasks. You input some text as a prompt, and the model will generate a text completion that attempts to match whatever context or pattern you gave it.",
+  lightImage: "https://edge.yancey.app/beg/2fpf1pv6-1685074617343.png",
+  darkImage: "https://edge.yancey.app/beg/z5rjy1r5-1685076020111.png",
+  bullets: [],
 };
 
+const benefitThree = {
+  title: "Audio Transcription",
+  desc: "The transcriptions API takes as input the audio file you want to transcribe and the desired output file format for the transcription of the audio.",
+  lightImage: "https://edge.yancey.app/beg/q8tjqu1k-1685073591563.png",
+  darkImage: "https://edge.yancey.app/beg/k7mo62kq-1685076012796.png",
+  bullets: [],
+};
 
-export {benefitOne, benefitTwo};
+const benefitFour = {
+  title: "Audio Translation",
+  desc: "The translations API takes as input the audio file in any of the supported languages and transcribes, if necessary, the audio into english.",
+  lightImage: "https://edge.yancey.app/beg/c7ppn5s6-1685074011821.png",
+  darkImage: "https://edge.yancey.app/beg/zdmmm1kq-1685076004067.png",
+  bullets: [],
+};
+
+const benefitFive = {
+  title: "Text To Image",
+  desc: "The image generations endpoint allows you to create an original image given a text prompt.",
+  lightImage: "https://edge.yancey.app/beg/u1odt2ot-1685074261182.png",
+  darkImage: "https://edge.yancey.app/beg/jlapw99s-1685075993402.png",
+  bullets: [],
+};
+
+export { benefitOne, benefitTwo, benefitThree, benefitFour, benefitFive };

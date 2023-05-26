@@ -1,7 +1,7 @@
 {
-  "name": "nextly-template",
+  "name": "hyperchat-website",
   "version": "0.1.0",
-  "description": "Nextly Landing Page Template",
+  "description": "Hyper Chat Landing Page",
   "private": true,
   "scripts": {
     "dev": "next dev -p 2999",
@@ -10,15 +10,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://gituhb.com/web3templates/nextly-template"
+    "url": "https://github.com/Hyper-Chat-Bot"
   },
   "keywords": [
-    "nextjs",
-    "tailwindcss",
-    "free"
+    "Hyper Chat",
+    "OpenAI",
+    "Chat Bot"
   ],
-  "author": "Surjith S M",
-  "license": "ISC",
+  "author": "Yancey Leo",
+  "license": "MIT",
   "dependencies": {
     "@emotion/css": "^11.10.6",
     "@emotion/react": "^11.10.6",
