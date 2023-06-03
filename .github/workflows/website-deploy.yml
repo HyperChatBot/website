@@ -3,12 +3,12 @@ name: landing-website
 on:
   push:
     paths:
-      - "website/**"
+      - "**"
     branches: 
       - "**"
   pull_request:
     paths:
-      - "website/**"
+      - "**"
     branches:
       - "**"
 
