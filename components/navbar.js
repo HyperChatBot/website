@@ -1,6 +1,6 @@
 import Link from "next/link";
-import ThemeChanger from "./darkSwitch";
 import { Disclosure } from "@headlessui/react";
+import ThemeChanger from "./darkSwitch";
 
 const Navbar = () => {
   const navigation = [
