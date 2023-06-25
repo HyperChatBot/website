@@ -14,7 +14,7 @@ const Navbar = () => {
     },
     {
       name: "Community",
-      link: "https://discord.gg/tHzYjTqn",
+      link: "https://discord.gg/WpzbBe4D",
     },
   ];
 
