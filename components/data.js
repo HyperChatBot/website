@@ -1,5 +1,5 @@
 const benefitOne = {
-  title: "Chat",
+  title: "Chat Completion",
   desc: "Chat models take a series of messages as input, and return a model-generated message as output.",
   lightImage: "https://edge.yancey.app/beg/qk79imya-1685073643946.png",
   darkImage: "https://edge.yancey.app/beg/usgq0hjm-1685018446761.png",

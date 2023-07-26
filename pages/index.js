@@ -13,7 +13,7 @@ import Video from "../components/video";
 import Benefits from "../components/benefits";
 import Footer from "../components/footer";
 
-const Home = () => {
+const Home = ({downloadUrl}) => {
   return (
     <>
       <Head>
@@ -26,14 +26,14 @@ const Home = () => {
       </Head>
 
       <Navbar />
-      <Hero />
+      <Hero downloadUrl={downloadUrl} />
       <SectionTitle pretitle="" title="Features">
         The core of Hyper Chat is absolute data security, we use IndexedDB to
         store your data and API keys, and no data will be transmitted to the
-        internet. Currently, we support various scenarios such as Chat,
-        Completion, Audio Transcription, Audio Translation and Image Generation,
+        internet. Currently, we support various scenarios such as Chat Completion,
+        Text Completion, Audio Transcription, Audio Translation and Image Generation,
         with the support of the large language models and its API provided by
-        OpenAI, Azure OpenAI service and Claude.
+        OpenAI and Azure OpenAI service.
       </SectionTitle>
       <Benefits data={benefitOne} />
       <Benefits imgPos="right" data={benefitTwo} />
@@ -44,17 +44,32 @@ const Home = () => {
         1-minute introduction to Hyper Chat.
       </SectionTitle>
       <Video />
-      {/* <SectionTitle
-        pretitle="Testimonials"
-        title="Here's what our customers said"
-      >
-        Testimonails is a great way to increase the brand trust and awareness.
-        Use this section to highlight your popular customers.
-      </SectionTitle>
-      <Testimonials /> */}
       <Footer />
     </>
   );
 };
+
+export async function getServerSideProps(context) {
+  const userAgent = context.req.headers["user-agent"];
+
+  let platform = "darwin";
+
+  if (/Win/i.test(userAgent)) {
+    platform = "win64";
+  } else if (/Linux/i.test(userAgent)) {
+    platform = "linux";
+  } else if (/Mac/i.test(userAgent)) {
+    platform = "darwin";
+  }
+
+  const res = await fetch(
+    `https://faas.yancey.app/api/updater/${platform}/cross-platform/latested?code=PjS1zF7Vc1QMrJ80C3xJS1tqkGqH-pT4oNlPfkFBYt0YAzFupnB5tA==`
+  );
+  const data = await res.json();
+
+  return {
+    props: { downloadUrl: data.url }, // will be passed to the page component as props
+  };
+}
 
 export default Home;

@@ -1,7 +1,7 @@
 import Container from "./container";
 import { useTheme } from "next-themes";
 
-const Hero = () => {
+const Hero = ({ downloadUrl }) => {
   const { theme } = useTheme();
 
   return (
@@ -13,14 +13,14 @@ const Hero = () => {
               Hyper Chat
             </h1>
             <p className="py-5 text-xl leading-normal text-gray-500 lg:text-xl xl:text-2xl dark:text-gray-300">
-              Hyper Chat is a free, safety chat bot web app with OpenAI, Azure
-              OpenAI service and Claude. Its built with Tauri, React,
+              Hyper Chat is a free, safety chat bot web app with OpenAI and Azure
+              OpenAI service. Its built with Tauri, React,
               TailwindCSS, IndexedDB. And its completely open-source.
             </p>
 
             <div className="flex flex-col items-start space-y-3 sm:space-x-4 sm:space-y-0 sm:items-center sm:flex-row">
               <a
-                href="https://web3templates.com/templates/nextly-landing-page-template-for-startups"
+                href={downloadUrl}
                 target="_blank"
                 rel="noopener"
                 className="px-8 py-4 text-lg font-medium text-center text-white bg-indigo-600 rounded-md "
@@ -28,7 +28,7 @@ const Hero = () => {
                 Download for Free
               </a>
               <a
-                href="https://github.com/hyper-chat-bot"
+                href="https://github.com/orgs/HyperChatBot"
                 target="_blank"
                 rel="noopener"
                 className="flex items-center space-x-2 text-gray-500 dark:text-gray-400"

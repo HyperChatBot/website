@@ -14,7 +14,7 @@ export default function Footer() {
     },
     {
       name: "Community",
-      link: "https://discord.gg/WpzbBe4D",
+      link: "https://github.com/orgs/HyperChatBot/discussions/71",
     },
   ];
 
@@ -38,9 +38,9 @@ export default function Footer() {
             </div>
 
             <div className="max-w-md mt-4 text-gray-500 dark:text-gray-400">
-              Hyper Chat is a free, safety chat bot web app with OpenAI, Azure
-              OpenAI service and Claude. Its built with Tauri, React,
-              TailwindCSS, IndexedDB. And its completely open-source.
+              Hyper Chat is a free, safety chat bot web app with OpenAI and
+              Azure OpenAI service. Its built with Tauri, React, TailwindCSS,
+              IndexedDB. And its completely open-source.
             </div>
           </div>
 
@@ -48,6 +48,7 @@ export default function Footer() {
             <div className="flex flex-wrap w-full -mt-2 -ml-3 lg:ml-0">
               {navigation.map((item, index) => (
                 <Link
+                  key={index}
                   href={item.link}
                   className="w-full px-4 py-2 text-gray-500 rounded-md dark:text-gray-300 hover:text-indigo-500 focus:text-indigo-500 focus:bg-indigo-100 focus:outline-none dark:focus:bg-trueGray-700"
                 >
@@ -92,14 +93,6 @@ export default function Footer() {
               >
                 <span className="sr-only">Instagram</span>
                 <Instagram />
-              </a>
-              <a
-                href="https://www.linkedin.com/in/%E5%BB%B6%E6%98%AD-%E5%88%98-57719b167"
-                target="_blank"
-                rel="noopener"
-              >
-                <span className="sr-only">Linkedin</span>
-                <Linkedin />
               </a>
             </div>
           </div>

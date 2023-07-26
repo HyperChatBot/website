@@ -5,16 +5,16 @@ import ThemeChanger from "./darkSwitch";
 const Navbar = () => {
   const navigation = [
     {
-      name: "Blog",
+      name: "My Blog",
       link: "https://yanceyleo.com/",
     },
     {
       name: "GitHub",
-      link: "https://github.com/YanceyOfficial",
+      link: "https://github.com/orgs/HyperChatBot",
     },
     {
       name: "Community",
-      link: "https://discord.gg/WpzbBe4D",
+      link: "https://github.com/orgs/HyperChatBot/discussions/71",
     },
   ];
 
