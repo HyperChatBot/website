@@ -38,7 +38,7 @@ export default function Footer() {
             </div>
 
             <div className="max-w-md mt-4 text-gray-500 dark:text-gray-400">
-              Hyper Chat is a free, safety chat bot web app with OpenAI and
+              Hyper Chat is a free, safety chat bot with OpenAI and
               Azure OpenAI service. Its built with Tauri, React, TailwindCSS,
               IndexedDB. And its completely open-source.
             </div>

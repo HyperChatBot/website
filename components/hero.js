@@ -13,7 +13,7 @@ const Hero = ({ downloadUrl }) => {
               Hyper Chat
             </h1>
             <p className="py-5 text-xl leading-normal text-gray-500 lg:text-xl xl:text-2xl dark:text-gray-300">
-              Hyper Chat is a free, safety chat bot web app with OpenAI and Azure
+              Hyper Chat is a free, safety chat bot with OpenAI and Azure
               OpenAI service. Its built with Tauri, React,
               TailwindCSS, IndexedDB. And its completely open-source.
             </p>
@@ -55,8 +55,8 @@ const Hero = ({ downloadUrl }) => {
             <img
               src={
                 theme === "light"
-                  ? "https://edge.yancey.app/beg/qk79imya-1685073643946.png"
-                  : "https://edge.yancey.app/beg/usgq0hjm-1685018446761.png"
+                  ? "https://edge.yancey.app/beg/gf3ohoi2-1690808811131.png"
+                  : "https://edge.yancey.app/beg/frflci8f-1690808815033.png"
               }
               width="616"
             />
