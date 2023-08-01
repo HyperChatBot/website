@@ -20,7 +20,7 @@ const Home = ({downloadUrl}) => {
         <title>Hyper Chat - Free Chat Bot</title>
         <meta
           name="description"
-          content="Nextly is a free landing page template built with next.js & Tailwind CSS"
+          content="Hyper Chat is a high-performance cross-platform AI chat application for desktop that is compatible with both OpenAI and Azure OpenAI services' APIs"
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>

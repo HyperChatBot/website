@@ -1,16 +1,9 @@
-name: landing-website
+name: deploy
 
 on:
   push:
-    paths:
-      - "**"
     branches: 
-      - "**"
-  pull_request:
-    paths:
-      - "**"
-    branches:
-      - "**"
+      - "master"
 
 jobs:
   test:
