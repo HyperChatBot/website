@@ -1,4 +1,4 @@
-lockfileVersion: 5.3
+lockfileVersion: 5.4
 
 specifiers:
   '@emotion/css': ^11.10.6
@@ -23,12 +23,12 @@ dependencies:
   '@emotion/css': 11.11.0
   '@emotion/react': 11.11.0_react@18.2.0
   '@emotion/server': 11.11.0_@emotion+css@11.11.0
-  '@emotion/styled': 11.11.0_96936b0f882e52e2d1ff91a82ecd441f
-  '@headlessui/react': 1.7.14_react-dom@18.2.0+react@18.2.0
+  '@emotion/styled': 11.11.0_s2jwwd4ifzjofup7sguc5tked4
+  '@headlessui/react': 1.7.14_biqbaboplfbrettd7655fr4n2y
   '@heroicons/react': 2.0.17_react@18.2.0
   '@tailwindcss/aspect-ratio': 0.4.2_tailwindcss@3.3.2
-  next: 13.4.1_react-dom@18.2.0+react@18.2.0
-  next-themes: 0.2.1_d5c8ad535f2aeb5e871600db4e5ee6bf
+  next: 13.4.1_biqbaboplfbrettd7655fr4n2y
+  next-themes: 0.2.1_2xek2u27flvv5bywadnu4xxgx4
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
   react-hook-form: 7.43.9_react@18.2.0
@@ -194,7 +194,7 @@ packages:
     resolution: {integrity: sha512-0QBtGvaqtWi+nx6doRwDdBIzhNdZrXUppvTM4dtZZWEGTXL/XE/yJxLMGlDT1Gt+UHH5IX1n+jkXyytE/av7OA==}
     dev: false
 
-  /@emotion/styled/11.11.0_96936b0f882e52e2d1ff91a82ecd441f:
+  /@emotion/styled/11.11.0_s2jwwd4ifzjofup7sguc5tked4:
     resolution: {integrity: sha512-hM5Nnvu9P3midq5aaXj4I+lnSfNi7Pmd4EWk1fOZ3pxookaQTNew6bp4JaCBYM4HVFZF9g7UjJmsUmC2JlxOng==}
     peerDependencies:
       '@emotion/react': ^11.0.0-rc.0
@@ -234,7 +234,7 @@ packages:
     resolution: {integrity: sha512-EsBwpc7hBUJWAsNPBmJy4hxWx12v6bshQsldrVmjxJoc3isbxhOrF2IcCpaXxfvq03NwkI7sbsOLXbYuqF/8Ww==}
     dev: false
 
-  /@headlessui/react/1.7.14_react-dom@18.2.0+react@18.2.0:
+  /@headlessui/react/1.7.14_biqbaboplfbrettd7655fr4n2y:
     resolution: {integrity: sha512-znzdq9PG8rkwcu9oQ2FwIy0ZFtP9Z7ycS+BAqJ3R5EIqC/0bJGvhT7193rFf+45i9nnPsYvCQVW4V/bB9Xc+gA==}
     engines: {node: '>=10'}
     peerDependencies:
@@ -945,19 +945,19 @@ packages:
     resolution: {integrity: sha512-ONmRUqK7zj7DWX0D9ADe03wbwOBZxNAfF20PlGfCWQcD3+/MakShIHrMqx9YwPTfxDdF1zLeL+RGZiR9kGMLdg==}
     dev: false
 
-  /next-themes/0.2.1_d5c8ad535f2aeb5e871600db4e5ee6bf:
+  /next-themes/0.2.1_2xek2u27flvv5bywadnu4xxgx4:
     resolution: {integrity: sha512-B+AKNfYNIzh0vqQQKqQItTS8evEouKD7H5Hj3kmuPERwddR2TxvDSFZuTj6T7Jfn1oyeUyJMydPl1Bkxkh0W7A==}
     peerDependencies:
       next: '*'
       react: '*'
       react-dom: '*'
     dependencies:
-      next: 13.4.1_react-dom@18.2.0+react@18.2.0
+      next: 13.4.1_biqbaboplfbrettd7655fr4n2y
       react: 18.2.0
       react-dom: 18.2.0_react@18.2.0
     dev: false
 
-  /next/13.4.1_react-dom@18.2.0+react@18.2.0:
+  /next/13.4.1_biqbaboplfbrettd7655fr4n2y:
     resolution: {integrity: sha512-JBw2kAIyhKDpjhEWvNVoFeIzNp9xNxg8wrthDOtMctfn3EpqGCmW0FSviNyGgOSOSn6zDaX48pmvbdf6X2W9xA==}
     engines: {node: '>=16.8.0'}
     hasBin: true
